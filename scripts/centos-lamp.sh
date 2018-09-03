@@ -23,7 +23,9 @@ service mysql start
 mysql -u root -e "SHOW DATABASES";
 
 # Download Started Content
-
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/hefayed01/vagrant/master/files/index.html
+sudo -u vagrant wget -q https://raw.githubusercontent.com/hefayed01/vagrant/master/files/info.php
 service httpd restart
 
 # Disable iptables
